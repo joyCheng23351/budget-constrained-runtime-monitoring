@@ -1,0 +1,6 @@
+project,mode,status,duration_ms,violation_occurrences,unique_violation_rows,unique_traces,trace_frequency_sum,derived_duplicate_trace_instances,locations
+javadbf,no-RV,success,11142,0,0,,,,
+javadbf,ValgJ,success,61079,506,3,,,,
+javadbf,JavaMOP,success,38795,529,3,,,,
+javadbf,ValgT,failed,,,,,,,
+javadbf,TraceMOP,success,49768,529,3,278,137591,137313,159

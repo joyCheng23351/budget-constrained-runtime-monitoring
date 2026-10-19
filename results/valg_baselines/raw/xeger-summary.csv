@@ -1,0 +1,6 @@
+project,mode,status,duration_ms,violation_occurrences,unique_violation_rows,unique_traces,trace_frequency_sum,derived_duplicate_trace_instances,locations
+xeger,no-RV,success,10428,0,0,,,,
+xeger,ValgJ,success,44714,229,1,,,,
+xeger,JavaMOP,success,66003,4202,1,,,,
+xeger,ValgT,failed,,,,,,,
+xeger,TraceMOP,failed,,,,,,,
