@@ -1,4 +1,8 @@
 __pycache__/
+*.py[cod]
 .venv/
-*.pyc
 .DS_Store
+*.aux
+*.log
+*.out
+*.synctex.gz
