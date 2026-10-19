@@ -1,25 +1,34 @@
 # Budget-Constrained Selective Runtime Monitoring
 
-CS 6158 research project. The objective is to allocate a fixed monitor-creation budget using historical trace coverage, frequency, and cost information, ultimately comparing against Valg at matched **realized** overhead.
+CS 6158 project by Shiyun Cheng and Gengkun Shao.
 
-## Status
-This repository currently contains an **offline historical trace-coverage experiment** on javadbf and jlemmagen. Its budgets use an *event-check cost proxy*, not measured runtime. Coverage is of historically recorded unique trace IDs, **not** violation recall on held-out executions.
+## Scope
+This repository focuses on **real historical TraceMOP/Valg profiling data** and offline budget-constrained monitor-group selection. Earlier synthetic and Valgrind prototype experiments are intentionally excluded.
 
-Algorithms: random, frequency, utility/cost, redundancy-aware marginal coverage greedy, and additive knapsack approximation.
+The five implemented strategies are random, frequency ranking, standalone trace utility/cost, redundancy-aware greedy marginal coverage/cost, and additive knapsack.
+
+## Evaluation
+Two Java workloads: javadbf (153 inferred location/spec groups; 278 historical distinct trace IDs) and jlemmagen (66 groups; 2,115 historical distinct trace IDs). Budgets are 10%, 20%, 30%, 50%, and 80% of the **event-check cost proxy**, not measured runtime. Random selection uses 30 trials.
+
+At a 20% proxy budget, both utility/cost and redundancy-aware greedy achieve 97.84% historical unique-trace recall on javadbf and 99.67% on jlemmagen.
+
+These results **do not** establish held-out violation recall, actual runtime savings, or superiority over Valg at matched realized cost.
+
+## Files
+- `src/run_experiments.py`: offline selection and evaluation
+- `data/valg-algorithm-input.xlsx`: historical monitor-group data
+- `data/valg-subset-dashboard.xlsx`: separate Valg baseline reproduction results
+- `results/offline/`: generated metrics, selections, and plots
+- `reports/`: midterm progress report and detailed real-trace experiment report
 
 ## Reproduce
-Install Python requirements, then supply `data/valg-algorithm-input.xlsx` and run:
-
 ```bash
 python -m pip install -r requirements.txt
-python src/run_experiments.py --input data/valg-algorithm-input.xlsx --output results/offline --random-trials 30
+python src/run_experiments.py --input data/valg-algorithm-input.xlsx --output results/reproduced --random-trials 30
 ```
 
-Outputs: `metrics_raw.csv`, `metrics_summary.csv`, `selections.csv`, `dataset_summary.json`, and two trace-recall plots.
-
-**Data provenance:** The input spreadsheet was prepared from historical Valg/TraceMOP profiling. Monitor groups are approximated by location/specification; exact per-location violation attribution and true incremental runtime costs have not been established.
-
 ## Remaining work
-Validate monitor-location correspondence, enable/disable monitors in real runs, collect violation attribution, hold out executions, measure actual CPU time and memory, and compare against Valg at equal realized monitoring overhead.
+Validate location attribution, collect per-location violations, implement selectively enabled monitors, measure actual runtime and memory, and compare with Valg at matched realized costs on held-out executions.
 
-The current dataset and reports can be found in the local submission package until binary assets are uploaded.
+## Data rights
+Keep this repository private unless the team has confirmed permission to redistribute the input workbooks.
