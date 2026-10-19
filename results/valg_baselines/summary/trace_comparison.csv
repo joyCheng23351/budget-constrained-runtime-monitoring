@@ -1,0 +1,2 @@
+project,valgt_seconds,tracemop_seconds,time_reduction,valgt_unique_traces,tracemop_unique_traces,unique_trace_retention,valgt_duplicate_instances,tracemop_duplicate_instances,duplicate_instance_reduction
+jlemmagen,184.6,349.056,0.4711450311697836,1840,2115,0.8699763593380615,79812,1258457,0.9365794778844251

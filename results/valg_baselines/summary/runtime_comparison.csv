@@ -1,0 +1,5 @@
+project,no_rv_seconds,valgj_seconds,javamop_seconds,valgj_vs_javamop_time_reduction,valgj_unique_violation_rows,javamop_unique_violation_rows
+javadbf,11.142,61.079,38.795,-0.574403918030674,3,3
+jlemmagen,9.389,114.502,315.707,0.6373156122607354,3,3
+route53-infima,13.673,41.806,59.767,0.3005170077132866,8,8
+xeger,10.428,44.714,66.003,0.3225459448812933,1,1

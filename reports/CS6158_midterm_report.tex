@@ -1,7 +1,7 @@
 \documentclass[10pt,letterpaper]{article}
 \usepackage[margin=0.79in]{geometry}
 \usepackage[T1]{fontenc}
-\usepackage{lmodern,amsmath,booktabs,enumitem,microtype}
+\usepackage{lmodern,amsmath,booktabs,enumitem,microtype,graphicx,float}
 \setlength{\parindent}{0pt}\setlength{\parskip}{4pt}
 \setlist{nosep,leftmargin=1.4em}
 \title{\vspace{-1.5em}CS 6158 Midterm Progress Report\\[3pt]\large Budget-Constrained Selective Runtime Monitoring}
@@ -11,10 +11,10 @@
 \section{Research Goal and Progress}
 Our project asks how to allocate a fixed budget among runtime monitor-creation locations using historical execution frequency, cost, useful traces, violation reports, and redundancy. The primary research question is whether budget-aware selection preserves more violations than simple heuristics or \emph{Valg}, an adaptive online monitor-creation policy, at comparable \emph{realized} overhead. We originally proposed evaluation on held-out executions, including unique-trace and violation recall, runtime and memory, with software evolution and exploration as extensions.
 
-At midterm, we have \textbf{implemented five selection baselines and a reproducible evaluation pipeline}, and performed \textbf{offline selection experiments on historical TraceMOP monitor-profile data for two real Java projects}. Separately, we have a preliminary Valg reproduction dashboard comparing ValgJ and JavaMOP on four Java projects, with a partial ValgT/TraceMOP comparison. These are \emph{distinct experiments}: our budgeted policies have not yet been deployed in the Valg runtime or compared against Valg at matched actual cost.
+At midterm, we have \textbf{implemented five selection baselines and a reproducible evaluation pipeline}, and performed \textbf{offline selection experiments on historical TraceMOP monitor-profile data for two real Java projects}. Separately, we have executed a small-scale Valg artifact reproduction comparing ValgJ and JavaMOP on four Java projects, with one complete ValgT/TraceMOP pair. These are \emph{distinct experiments}: our budgeted policies have not yet been deployed in the Valg runtime or compared against Valg at matched actual cost.
 
 \section{Implemented Modules and Methods}
-The Python selection pipeline reads per-group historical information and produces selected group IDs, budget usage, recall metrics, CSV tables, and plots. Five strategies are implemented: \textbf{random} feasible selection (30 draws per budget in the real-trace evaluation); \textbf{frequency ranking}; \textbf{standalone utility/cost ranking}; \textbf{redundancy-aware greedy}, which maximizes incremental distinct-trace gain per unit cost; and \textbf{additive knapsack}, which maximizes sum of standalone trace counts using a discretized dynamic program. The knapsack surrogate can double-count traces shared by several groups; it is not an exact optimum for distinct-union coverage.
+The Python selection pipeline reads per-group historical information and produces selected group IDs, budget usage, recall metrics, CSV tables, and plots. Five strategies are implemented: \textbf{random} feasible selection (30 draws per budget in the real-trace evaluation); \textbf{frequency ranking}; \textbf{standalone utility/cost ranking}; \textbf{redundancy-aware greedy}, which maximizes incremental distinct-trace gain per unit cost; and \textbf{additive knapsack}, which maximizes sum of standalone trace counts using a discretized dynamic program. The knapsack surrogate can double-count traces shared by several groups; it is not an exact optimum for distinct-union coverage. The committed runner now reads a plain CSV profile by default, avoiding dependence on a project-specific spreadsheet package.
 
 For historical trace IDs $T_i$ attached to a candidate group $i$, a selected set $S$, and a proxy cost $c_i$, the current offline experiment solves the approximation
 \begin{equation}
@@ -37,10 +37,24 @@ Additive knapsack & 89.57\% & 99.57\% \\\bottomrule
 \end{tabular}\end{table}
 The cost-aware approaches preserved most of the previously observed distinct traces under this proxy budget. Greedy and static utility/cost tied on both reported workloads, so these results \emph{do not establish} a benefit from explicitly modeling redundancy. Knapsack can fare worse because its additive objective rewards overlapping traces repeatedly. Frequency ranking is unstable across budgets: static-order packing may select an expensive early group at a larger budget and thereby exclude numerous smaller groups, making independently computed selections non-nested and recall non-monotone. These outcomes are exploratory and depend on the historical aggregation.
 
-\textbf{Valg baseline work.} The partner's reproduction dashboard covers \texttt{javadbf}, \texttt{jlemmagen}, \texttt{route53-infima}, and \texttt{xeger} using no-RV, ValgJ and JavaMOP configurations. The comparison provides a concrete environment for future realized-cost baselines. A trace-oriented ValgT/TraceMOP paired result is available for \texttt{jlemmagen}, but coverage and timing measurements are incomplete across other projects. These baseline runs \emph{cannot yet be directly compared} with offline proxy-budget choices.
+\textbf{Valg artifact reproduction.} We used the official artifact scripts in a prepared Docker container and pinned project commits. All four projects completed no-RV, ValgJ, and JavaMOP. Table~\ref{tab:valg} reports one end-to-end measurement per mode; it does not estimate timing variance or monitoring-only time.
+\begin{table}[H]\centering\small
+\caption{Partial Valg artifact reproduction. Time reduction is $1-T_{\mathrm{ValgJ}}/T_{\mathrm{JavaMOP}}$.}\label{tab:valg}
+\begin{tabular}{lrrrr}\toprule
+Project & no-RV (s) & ValgJ (s) & JavaMOP (s) & Reduction \\\midrule
+\texttt{xeger} & 10.428 & 44.714 & 66.003 & 32.3\% \\
+\texttt{javadbf} & 11.142 & 61.079 & 38.795 & $-57.4$\% \\
+\texttt{route53-infima} & 13.673 & 41.806 & 59.767 & 30.1\% \\
+\texttt{jlemmagen} & 9.389 & 114.502 & 315.707 & 63.7\% \\\bottomrule
+\end{tabular}\end{table}
+ValgJ was faster on three of four projects, with a median reduction of 31.2\%. Each ValgJ/JavaMOP pair reported the same number of distinct violation rows, although ValgJ reported fewer violation occurrences. We therefore describe this as preservation of the observed violation signatures, not general violation recall. Only \texttt{jlemmagen} completed both trace modes: ValgT took 184.600~s versus 349.056~s for TraceMOP (47.1\% reduction), retained 1,840/2,115 unique traces (87.0\%), and reduced derived duplicate trace instances from 1,258,457 to 79,812 (93.7\%). These runs validate the environment and provide concrete baselines, but \emph{cannot yet be directly compared} with offline proxy-budget choices.
+\begin{figure}[H]\centering
+\includegraphics[width=\textwidth]{../results/valg_baselines/figures/valg_subset_summary.png}
+\caption{Subset reproduction: Java-mode end-to-end time and the one complete trace-mode pair.}
+\end{figure}
 
 \section{Challenges, Risks, and What We Learned}
-First, \textbf{violation attribution is missing}: historical reports identify violations, but do not show whether each proposed location would independently detect them. Second, \textbf{proxy cost is not realized overhead}: global instrumentation, shared monitoring work, and interactions between selected groups can invalidate an additive runtime interpretation. Third, the inferred creation location and specification group may not match a controllable creation-site switch; this needs inspection of the monitoring implementation. Fourth, all current real-trace data are from historical execution logs, without a held-out evaluation split. We cannot yet claim generalization, measured memory savings, or superiority over Valg.
+First, \textbf{violation attribution is missing}: historical reports identify violations, but do not show whether each proposed location would independently detect them. Second, \textbf{proxy cost is not realized overhead}: global instrumentation, shared monitoring work, and interactions between selected groups can invalidate an additive runtime interpretation. Third, the inferred creation location and specification group may not match a controllable creation-site switch; this needs inspection of the monitoring implementation. Fourth, all current real-trace data are from historical execution logs, without a held-out evaluation split. Fifth, the artifact timing results are single runs and three projects lack a complete ValgT/TraceMOP pair. We cannot yet claim generalization, measured memory savings, or superiority over Valg.
 
 \section{Schedule and Deliverables}
 We remain on track for the implemented selection-pipeline deliverable; a fully realized-cost-matched Valg comparison remains the main risk. \textbf{Oct. 19--25:} validate group IDs and extraction semantics; reproduce real-trace offline plots and curate workloads. \textbf{Oct. 26--Nov. 1:} implement or test enable/disable of selected monitor-creation sites and collect per-site violation associations. \textbf{Nov. 2--8:} profile representative configurations with repeated runtime and memory measurements. \textbf{Nov. 9--15:} compare budgeted policies and Valg at similar measured overhead using held-out executions. \textbf{Nov. 16--end of term:} robustness analyses, possible revision-transfer/exploration study, final repository and report.

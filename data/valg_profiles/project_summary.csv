@@ -1,0 +1,3 @@
+project,baseline_tool,unique_traces,trace_frequency_sum,weighted_event_checks,monitor_location_spec_groups,violation_occurrences,unique_violation_rows,exact_per_monitor_cost_available
+javadbf,TraceMOP,278,137591,713840,153,529,3,no
+jlemmagen,TraceMOP,2115,1260572,8572328,66,3431,3,no

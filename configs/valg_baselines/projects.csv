@@ -1,0 +1,6 @@
+project,repository,commit,role
+xeger,agarciadom/xeger,f3b8a33b0f4438d639150b57b9a0257d50c71bc2,small Java baseline
+javadbf,albfernandez/javadbf,395265f33bcf9080b02f2102c4b6284921cefae2,Java and TraceMOP profile
+route53-infima,awslabs/route53-infima,cabce497698e41d610a949e8a5e4a0528170382,small Java baseline
+jlemmagen,hlavki/jlemmagen,43f7c636811a1f7fea7ae7db403ec6f3ec60e9b7,complete Java and trace pair
+jackson-antpathfilter,Antibrumm/jackson-antpathfilter,40f3af16e9a32fec910fadfde144c4b58217d5e7,optional not run
