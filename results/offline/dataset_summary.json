@@ -1,4 +1,16 @@
 [
-  {"project":"javadbf","groups":153,"trace_universe":278,"total_proxy_cost":713840,"violations_attributed":false},
-  {"project":"jlemmagen","groups":66,"trace_universe":2115,"total_proxy_cost":8572328,"violations_attributed":false}
+  {
+    "project": "javadbf",
+    "groups": 153,
+    "trace_universe": 278,
+    "total_proxy_cost": 713840,
+    "violations_attributed": false
+  },
+  {
+    "project": "jlemmagen",
+    "groups": 66,
+    "trace_universe": 2115,
+    "total_proxy_cost": 8572328,
+    "violations_attributed": false
+  }
 ]
