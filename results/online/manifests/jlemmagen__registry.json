@@ -1,0 +1,464 @@
+[
+  {
+    "id": "0237240c79ae5b4864f2ff875a88ece943983d1ae5412d4f6900a59056475a94",
+    "location": "org.slf4j.helpers.SubstituteLoggerFactory.getLoggers(SubstituteLoggerFactory.java:65)65",
+    "spec": "Map_UnsafeIteratorMonitor",
+    "assumed_location_id": "7",
+    "cost": 2
+  },
+  {
+    "id": "095bb3dc8e09194aeefbe534c824453eb55d1b5280fec7ecdd0028bac88ad859",
+    "location": "eu.hlavki.text.lemmagen.impl.LemmaTreeNode.<init>(LemmaTreeNode.java:112)83",
+    "spec": "Map_CollectionViewAddMonitor",
+    "assumed_location_id": "26",
+    "cost": 2090
+  },
+  {
+    "id": "0abf5781ada0466c7365783d2c646d8852c184a01bc80c30e99f5747e858f510",
+    "location": "eu.hlavki.text.lemmagen.impl.LemmaExample.getWordRear(LemmaExample.java:137)131",
+    "spec": "StringBuilder_ThreadSafeMonitor",
+    "assumed_location_id": "32",
+    "cost": 215253
+  },
+  {
+    "id": "1247f2e4beb46a74f82cbdc747b1f6f797bd4cfbef8fed8d719bc2ac8e41f5c1",
+    "location": "eu.hlavki.text.lemmagen.impl.LemmaTreeNode.findBestRules(LemmaTreeNode.java:181)149",
+    "spec": "Map_CollectionViewAddMonitor",
+    "assumed_location_id": "20",
+    "cost": 7203
+  },
+  {
+    "id": "137e4fd01a7af9d3110236b66ab80e570675de32ea039ad437d47dbcb5fbc083",
+    "location": "eu.hlavki.text.lemmagen.impl.LemmaTreeNode.findBestRules(LemmaTreeNode.java:181)149",
+    "spec": "Collection_UnsafeIteratorMonitor",
+    "assumed_location_id": "20",
+    "cost": 39296
+  },
+  {
+    "id": "1462f4b9fcd08e3fbd520a78909bb1338d7613d2ce00a30bc7b7d3ace320531c",
+    "location": "eu.hlavki.text.lemmagen.impl.RuleList.writeObject(RuleList.java:76)66",
+    "spec": "Iterator_HasNextMonitor",
+    "assumed_location_id": "30",
+    "cost": 951
+  },
+  {
+    "id": "1768e49ba87b2004b50131a3d1bb4c721e8c015b00730a62e386df734a683d1a",
+    "location": "eu.hlavki.text.lemmagen.impl.LemmaTreeNode.writeObject(LemmaTreeNode.java:321)318",
+    "spec": "Iterator_RemoveOnceMonitor",
+    "assumed_location_id": "35",
+    "cost": 3727
+  },
+  {
+    "id": "1a4f39ce49b098f8aed58f8c3d2b187746d9b3a948c44af9a96830513233b96f",
+    "location": "eu.hlavki.text.lemmagen.impl.LemmaTreeNode.findBestRules(LemmaTreeNode.java:182)149",
+    "spec": "Collections_SortBeforeBinarySearchMonitor",
+    "assumed_location_id": "21",
+    "cost": 19648
+  },
+  {
+    "id": "1e7461a690c9794e86eba5add1461e66257299af6832608416a669d9fc877506",
+    "location": "eu.hlavki.text.lemmagen.impl.LemmaExample.<init>(LemmaExample.java:63)47",
+    "spec": "Appendable_ThreadSafeMonitor",
+    "assumed_location_id": "14",
+    "cost": 1507464
+  },
+  {
+    "id": "2a89671372d2dfb75cb3fbf9f3445c6de9952acdbd549679d2d42de09b498c8d",
+    "location": "eu.hlavki.text.lemmagen.impl.ExampleList.getFrontRearExampleList(ExampleList.java:175)174",
+    "spec": "Iterator_RemoveOnceMonitor",
+    "assumed_location_id": "31",
+    "cost": 143568
+  },
+  {
+    "id": "2ca95cbe8d6e19f4789a3e1aeb9dbc6ff1ea6b45235df44914f9747261e458a9",
+    "location": "eu.hlavki.text.lemmagen.impl.LemmaTreeNode.<init>(LemmaTreeNode.java:118)83",
+    "spec": "Collection_UnsafeIteratorMonitor",
+    "assumed_location_id": "25",
+    "cost": 19218
+  },
+  {
+    "id": "2dcc3d5075b5d85bf34aeccb1c4bde769622438bba6aabb1b5501b2442142bdf",
+    "location": "eu.hlavki.text.lemmagen.TrainTest.assertLemmaEquals(TrainTest.java:101)92",
+    "spec": "StringBuilder_ThreadSafeMonitor",
+    "assumed_location_id": "40",
+    "cost": 84
+  },
+  {
+    "id": "35688b3bab38914145c3bbe975d1d2792f7e9790f4b3da870d032bd0cc218ff0",
+    "location": "eu.hlavki.text.lemmagen.impl.LemmaTreeNode.<init>(LemmaTreeNode.java:110)83",
+    "spec": "Iterator_RemoveOnceMonitor",
+    "assumed_location_id": "24",
+    "cost": 5594
+  },
+  {
+    "id": "3bc861409763b6c66ac731e22ee8a55c67a5a620ef822dfcf7c8b92f3e338fc7",
+    "location": "eu.hlavki.text.lemmagen.impl.LemmaTreeNode.<init>(LemmaTreeNode.java:110)83",
+    "spec": "Collection_UnsafeIteratorMonitor",
+    "assumed_location_id": "24",
+    "cost": 17340
+  },
+  {
+    "id": "43bf3db2f74ee221bf9dbb7a1d3dd33e493849fc2de58e049483a7d543eb4f04",
+    "location": "eu.hlavki.text.lemmagen.impl.ExampleList.add(ExampleList.java:151)149",
+    "spec": "TreeMap_ComparableMonitor",
+    "assumed_location_id": "15",
+    "cost": 215232
+  },
+  {
+    "id": "44f5eaf9af87fd01da563a22a2e2183091db030fe4ad322a3f06ac846e11e58d",
+    "location": "org.slf4j.impl.SimpleLogger.recursivelyComputeLevelString(SimpleLogger.java:231)226",
+    "spec": "StringBuilder_ThreadSafeMonitor",
+    "assumed_location_id": "10",
+    "cost": 51
+  },
+  {
+    "id": "45316a7fc5812b194738681d07451be3e71ca552ee2e726f46c82edb40ec5eab",
+    "location": "eu.hlavki.text.lemmagen.impl.LemmaRule.lemmatize(LemmaRule.java:87)87",
+    "spec": "Appendable_ThreadSafeMonitor",
+    "assumed_location_id": "37",
+    "cost": 24
+  },
+  {
+    "id": "45a98a38dcc8426385efa5c8b5c3e640ef0716646632e06c96033ef25ec9cf3d",
+    "location": "eu.hlavki.text.lemmagen.impl.ExampleList.finalizeAdditions(ExampleList.java:168)167",
+    "spec": "Map_UnsafeIteratorMonitor",
+    "assumed_location_id": "16",
+    "cost": 4
+  },
+  {
+    "id": "4c08e3353f34f7ce59f72ea635684c8ad931eb40ea5b2d2343cb42fe902bb667",
+    "location": "eu.hlavki.text.lemmagen.impl.LemmaTreeNode.<init>(LemmaTreeNode.java:118)83",
+    "spec": "Map_UnsafeIteratorMonitor",
+    "assumed_location_id": "25",
+    "cost": 52932
+  },
+  {
+    "id": "51dbdb91a24e6de46beafbfc2f1c8fa44a86469070800e60000337f70f210b56",
+    "location": "eu.hlavki.text.lemmagen.impl.RuleList.writeObject(RuleList.java:76)66",
+    "spec": "Map_UnsafeIteratorMonitor",
+    "assumed_location_id": "30",
+    "cost": 960
+  },
+  {
+    "id": "59d65793bb6aed7155358a97e154f41fe4e1da14d849165c41f154226b1a8605",
+    "location": "eu.hlavki.text.lemmagen.impl.LemmaTreeNode.writeObject(LemmaTreeNode.java:321)318",
+    "spec": "Iterator_HasNextMonitor",
+    "assumed_location_id": "35",
+    "cost": 8663
+  },
+  {
+    "id": "5cd894d5887d2e35af2882e714490de433643f9c48ae8ef864b9826db4da455b",
+    "location": "eu.hlavki.text.lemmagen.impl.LemmatizerSettings$MsdConsideration.<clinit>(LemmatizerSettings.java:31)36",
+    "spec": "Serializable_NoArgConstructorMonitor",
+    "assumed_location_id": "1",
+    "cost": 6
+  },
+  {
+    "id": "5f92a625ce795a1b68617a7af3f62a0ed08953841cfcbd91cfe78d9c47ef929a",
+    "location": "org.slf4j.LoggerFactory.findPossibleStaticLoggerBinderPathSet(LoggerFactory.java:312)301",
+    "spec": "Set_ItselfAsElementMonitor",
+    "assumed_location_id": "2",
+    "cost": 1
+  },
+  {
+    "id": "687032cd8056b6c79ce3902a99b796b73a94ea2439f1bd113ae0073ef60590d0",
+    "location": "eu.hlavki.text.lemmagen.LemmatizerFactory.saveToFile(LemmatizerFactory.java:72)63",
+    "spec": "Closeable_MultipleCloseMonitor",
+    "assumed_location_id": "36",
+    "cost": 1
+  },
+  {
+    "id": "69d5726deea4c7d47e8b74243d73ed20602f07542f69a1b7d2b8c6b56307c557",
+    "location": "eu.hlavki.text.lemmagen.impl.LemmaTreeNode.<init>(LemmaTreeNode.java:112)83",
+    "spec": "Map_UnsafeIteratorMonitor",
+    "assumed_location_id": "26",
+    "cost": 8360
+  },
+  {
+    "id": "6ccf6405fad4e28bf442e764b6c6fa2bb148781a41d0485ede9b5aaab5d27884",
+    "location": "eu.hlavki.text.lemmagen.impl.LemmaTreeNode.findBestRules(LemmaTreeNode.java:181)149",
+    "spec": "Map_UnsafeIteratorMonitor",
+    "assumed_location_id": "20",
+    "cost": 53702
+  },
+  {
+    "id": "7876d82cbb6dba5cd850699628f5cad130502ed105fa21bbf6a292b9a4e54acf",
+    "location": "eu.hlavki.text.lemmagen.impl.LemmaTreeNode.<init>(LemmaTreeNode.java:112)83",
+    "spec": "Collection_UnsafeIteratorMonitor",
+    "assumed_location_id": "26",
+    "cost": 4180
+  },
+  {
+    "id": "7992e70bbabbb3c03cc74749f12b7017e6ce8e7bdd9c68b5670abb18bf65b575",
+    "location": "org.slf4j.helpers.SubstituteLoggerFactory.getLoggers(SubstituteLoggerFactory.java:65)65",
+    "spec": "Map_CollectionViewAddMonitor",
+    "assumed_location_id": "7",
+    "cost": 1
+  },
+  {
+    "id": "8d105e9e1b4f7e33ca4af38b925bb7a5133e4751b25e0d5a082e8a966b0db219",
+    "location": "eu.hlavki.text.lemmagen.impl.LemmaTreeNode.<init>(LemmaTreeNode.java:118)83",
+    "spec": "Map_CollectionViewAddMonitor",
+    "assumed_location_id": "25",
+    "cost": 5594
+  },
+  {
+    "id": "903162e02df62dd594cf3e887acb966ec83ac77de4054fec8e81626dc2461c9b",
+    "location": "eu.hlavki.text.lemmagen.impl.LemmaRule.lemmatize(LemmaRule.java:87)87",
+    "spec": "StringBuilder_ThreadSafeMonitor",
+    "assumed_location_id": "37",
+    "cost": 36
+  },
+  {
+    "id": "a2147c551dcfa5731930eccffbfc549c85defa00c3d2e881c07181ef5117bdb4",
+    "location": "eu.hlavki.text.lemmagen.impl.RuleList.writeObject(RuleList.java:76)66",
+    "spec": "Collection_UnsafeIteratorMonitor",
+    "assumed_location_id": "30",
+    "cost": 954
+  },
+  {
+    "id": "a46f56dce85501a77a1aad9b345eff121acae4e592052493573fddbe12cc00f0",
+    "location": "eu.hlavki.text.lemmagen.impl.LemmaTreeNode.<init>(LemmaTreeNode.java:113)83",
+    "spec": "Iterator_RemoveOnceMonitor",
+    "assumed_location_id": "27",
+    "cost": 2090
+  },
+  {
+    "id": "a8a71a70746b21fc62cae749bf5223ad43cf712fc953d58c447450efc1f5b191",
+    "location": "eu.hlavki.text.lemmagen.LemmatizerFactory.saveToFile(LemmatizerFactory.java:72)63",
+    "spec": "OutputStream_ManipulateAfterCloseMonitor",
+    "assumed_location_id": "36",
+    "cost": 1
+  },
+  {
+    "id": "aca128fb741777e2609687008b2e223cb171c57036ed97a0553e688321e8f8b0",
+    "location": "eu.hlavki.text.lemmagen.LemmatizerFactory.read(LemmatizerFactory.java:87)81",
+    "spec": "InputStream_MarkAfterCloseMonitor",
+    "assumed_location_id": "44",
+    "cost": 2
+  },
+  {
+    "id": "b356c47e7270136640a17e14120eb89089099a4c63cfeca0591c9009a4b8c67c",
+    "location": "eu.hlavki.text.lemmagen.impl.ExampleList.finalizeAdditions(ExampleList.java:169)167",
+    "spec": "Collections_ImplementComparableMonitor",
+    "assumed_location_id": "17",
+    "cost": 7206
+  },
+  {
+    "id": "b7de2da660fcd1d11d9a38441c40489713836db8f951471cb6fa912ab84a054c",
+    "location": "eu.hlavki.text.lemmagen.impl.ExampleList.finalizeAdditions(ExampleList.java:168)167",
+    "spec": "Map_CollectionViewAddMonitor",
+    "assumed_location_id": "16",
+    "cost": 3
+  },
+  {
+    "id": "b9a903b6fe73f763b5e2176f7a764c4ec1d4eeae86ae53f9a36b4fddf8f32a25",
+    "location": "eu.hlavki.text.lemmagen.impl.LemmaExample.<init>(LemmaExample.java:63)47",
+    "spec": "StringBuilder_ThreadSafeMonitor",
+    "assumed_location_id": "14",
+    "cost": 1722816
+  },
+  {
+    "id": "bdb8907422ffea52eecae78177849e8c2fb7ee56c92b5d51d5a01116d8713c8b",
+    "location": "eu.hlavki.text.lemmagen.impl.LemmaExample.getLemmaFront(LemmaExample.java:118)117",
+    "spec": "StringBuilder_ThreadSafeMonitor",
+    "assumed_location_id": "34",
+    "cost": 143568
+  },
+  {
+    "id": "bff6ca49ebb963268e5b084f71952065b0c8bd2fd86b4aceccc5ab1ad13ca01e",
+    "location": "eu.hlavki.text.lemmagen.impl.RuleList.addRule(RuleList.java:57)55",
+    "spec": "Map_ItselfAsKeyMonitor",
+    "assumed_location_id": "13",
+    "cost": 495956
+  },
+  {
+    "id": "c107b8fd19ad433b6626f0406d1c26d85748fa65d66c14112a52ad2765b88a78",
+    "location": "eu.hlavki.text.lemmagen.TrainTest.assertLemmaEquals(TrainTest.java:98)92",
+    "spec": "Appendable_ThreadSafeMonitor",
+    "assumed_location_id": "38",
+    "cost": 36
+  },
+  {
+    "id": "c4d1baa6d9f9d2cbea67a1e4f8db22ed67043d2288701f57c9ea139a29aeb0a3",
+    "location": "org.slf4j.impl.SimpleLogger.recursivelyComputeLevelString(SimpleLogger.java:231)226",
+    "spec": "Appendable_ThreadSafeMonitor",
+    "assumed_location_id": "10",
+    "cost": 34
+  },
+  {
+    "id": "c69e44133d1dedb2aba7155b55021b7f5caa22057a2c3f74e5433948fd9b83f7",
+    "location": "eu.hlavki.text.lemmagen.impl.LemmaTreeNode.findBestRules(LemmaTreeNode.java:181)149",
+    "spec": "Iterator_HasNextMonitor",
+    "assumed_location_id": "20",
+    "cost": 32093
+  },
+  {
+    "id": "c74c847308ab4d81146bebd676bbd8914cd855a06c8806e62d9793151e67dda9",
+    "location": "eu.hlavki.text.lemmagen.impl.RuleList.addRule(RuleList.java:57)55",
+    "spec": "Map_ItselfAsValueMonitor",
+    "assumed_location_id": "13",
+    "cost": 495956
+  },
+  {
+    "id": "c878d34f70ca9c5eafa6b2976c5bf094f45e271b5f8744e7a622e9d99bd8554d",
+    "location": "eu.hlavki.text.lemmagen.impl.LemmaTreeNode.<init>(LemmaTreeNode.java:118)83",
+    "spec": "Iterator_HasNextMonitor",
+    "assumed_location_id": "25",
+    "cost": 13624
+  },
+  {
+    "id": "ca5689edbede8f1c406cf623a381583e0d6a97b68e87da5789024daa0adb1e48",
+    "location": "eu.hlavki.text.lemmagen.impl.LemmaTreeNode.<init>(LemmaTreeNode.java:110)83",
+    "spec": "Map_UnsafeIteratorMonitor",
+    "assumed_location_id": "24",
+    "cost": 48937
+  },
+  {
+    "id": "cac50367cea0c246132a9889eb42659a2dbff01156d173861f5f69bde5f71dfe",
+    "location": "eu.hlavki.text.lemmagen.impl.ExampleList.finalizeAdditions(ExampleList.java:169)167",
+    "spec": "Collections_SortBeforeBinarySearchMonitor",
+    "assumed_location_id": "17",
+    "cost": 3
+  },
+  {
+    "id": "cc807a6334d172535fd7a7a533bfe5afa81fa7051db012fcc2909873f2ad04f2",
+    "location": "eu.hlavki.text.lemmagen.impl.ExampleList.getFrontRearExampleList(ExampleList.java:175)174",
+    "spec": "Iterator_HasNextMonitor",
+    "assumed_location_id": "31",
+    "cost": 287138
+  },
+  {
+    "id": "cd18134649e59d013132be4dffe1a115f91452968278946fc61daf9e89f49491",
+    "location": "eu.hlavki.text.lemmagen.impl.LemmaTreeNode.<init>(LemmaTreeNode.java:118)83",
+    "spec": "Iterator_RemoveOnceMonitor",
+    "assumed_location_id": "25",
+    "cost": 4015
+  },
+  {
+    "id": "d0e426854f6ace15e93d95aa1fc3cb1cdb87fd7558381bb12c44ce06c211ef5b",
+    "location": "org.slf4j.LoggerFactory.fixSubstituteLoggers(LoggerFactory.java:191)189",
+    "spec": "Iterator_HasNextMonitor",
+    "assumed_location_id": "8",
+    "cost": 1
+  },
+  {
+    "id": "d526d30460cda84a2b165fe37663b8b15bb45da0b6be58c1e4d9de4fbf673a83",
+    "location": "eu.hlavki.text.lemmagen.LemmatizerFactory.read(LemmatizerFactory.java:87)81",
+    "spec": "Closeable_MultipleCloseMonitor",
+    "assumed_location_id": "44",
+    "cost": 2
+  },
+  {
+    "id": "d7e0e87dbd8bd3d30ee4c4acae0d137bb81708c75fc9f5db434389ae43f8b385",
+    "location": "eu.hlavki.text.lemmagen.impl.ExampleList.getFrontRearExampleList(ExampleList.java:175)174",
+    "spec": "Collection_UnsafeIteratorMonitor",
+    "assumed_location_id": "31",
+    "cost": 287140
+  },
+  {
+    "id": "d8831e2a033bde82801389b796d567a13b6babd371dfd814a920a84631ab7a87",
+    "location": "eu.hlavki.text.lemmagen.impl.LemmaTreeNode.findBestRules(LemmaTreeNode.java:181)149",
+    "spec": "Iterator_RemoveOnceMonitor",
+    "assumed_location_id": "20",
+    "cost": 12445
+  },
+  {
+    "id": "d9992a3b70703997ac08c98f69b3247fff7611ea4766c3bcbf4638540cd36a0f",
+    "location": "eu.hlavki.text.lemmagen.impl.LemmaTreeNode.<init>(LemmaTreeNode.java:113)83",
+    "spec": "Iterator_HasNextMonitor",
+    "assumed_location_id": "27",
+    "cost": 2090
+  },
+  {
+    "id": "dc8cde5c05b49208f091665ce52f73f89c1b92f253280f4c3bbb6555833eaeb2",
+    "location": "org.slf4j.LoggerFactory.fixSubstituteLoggers(LoggerFactory.java:191)189",
+    "spec": "Collection_UnsafeIteratorMonitor",
+    "assumed_location_id": "8",
+    "cost": 2
+  },
+  {
+    "id": "e2bf85cc7f2a7abf2a686ef20a0913d30ea9032394ca0dbe7a22cb7f55b8843a",
+    "location": "eu.hlavki.text.lemmagen.impl.LemmaTreeNode.<init>(LemmaTreeNode.java:110)83",
+    "spec": "Map_CollectionViewAddMonitor",
+    "assumed_location_id": "24",
+    "cost": 4285
+  },
+  {
+    "id": "e5a070f3e0ac3b4f1538ed7b1f08c614c106cd24a4ed9b5d8bc37dd0ff1320cb",
+    "location": "eu.hlavki.text.lemmagen.impl.LemmaExample.getWordFront(LemmaExample.java:105)104",
+    "spec": "StringBuilder_ThreadSafeMonitor",
+    "assumed_location_id": "33",
+    "cost": 143568
+  },
+  {
+    "id": "e6ba7ee4c9b9960c0bbda05a3f34d7539eaf42d59d1490fa10394306876b6253",
+    "location": "eu.hlavki.text.lemmagen.impl.LemmaRule.<init>(LemmaRule.java:47)38",
+    "spec": "Appendable_ThreadSafeMonitor",
+    "assumed_location_id": "12",
+    "cost": 1076775
+  },
+  {
+    "id": "e9105affbe8c7c8ecc73fd15ba69d7170cf3602f414650b7dc3e5360221cc6ca",
+    "location": "eu.hlavki.text.lemmagen.impl.RuleList.writeObject(RuleList.java:76)66",
+    "spec": "Map_CollectionViewAddMonitor",
+    "assumed_location_id": "30",
+    "cost": 3
+  },
+  {
+    "id": "eacbb554513349f6792c118379c31f42622b985303ea0da3e238dd740d2d637a",
+    "location": "eu.hlavki.text.lemmagen.impl.RuleList.writeObject(RuleList.java:76)66",
+    "spec": "Iterator_RemoveOnceMonitor",
+    "assumed_location_id": "30",
+    "cost": 474
+  },
+  {
+    "id": "ed5c15061f6934bc8962c7e5a6eed19dd76c26f63972c7a9eb81500c7b6b28dd",
+    "location": "eu.hlavki.text.lemmagen.impl.LemmaExample.getWordRear(LemmaExample.java:137)131",
+    "spec": "Appendable_ThreadSafeMonitor",
+    "assumed_location_id": "32",
+    "cost": 143502
+  },
+  {
+    "id": "edc104be567ee0882d8f3a1b0d64f48f1a2daa689b1f1f82c3489cebc4ac2891",
+    "location": "eu.hlavki.text.lemmagen.impl.LemmaTreeNode.<init>(LemmaTreeNode.java:110)83",
+    "spec": "Iterator_HasNextMonitor",
+    "assumed_location_id": "24",
+    "cost": 14264
+  },
+  {
+    "id": "f1ece58c38455927e872fdaef3a29941b0df72efcd32562395845ec88c85f9fc",
+    "location": "eu.hlavki.text.lemmagen.LemmatizerFactory.read(LemmatizerFactory.java:87)81",
+    "spec": "InputStream_ManipulateAfterCloseMonitor",
+    "assumed_location_id": "44",
+    "cost": 2
+  },
+  {
+    "id": "f2a3b33e875565b92e3d8eaacfdff4bae7e09efeb8eae7655b73a7531e76996b",
+    "location": "eu.hlavki.text.lemmagen.TrainTest.assertLemmaEquals(TrainTest.java:98)92",
+    "spec": "StringBuilder_ThreadSafeMonitor",
+    "assumed_location_id": "38",
+    "cost": 84
+  },
+  {
+    "id": "fb8b9de30330802a730c0440ff49018a5a79d7cb37837ed5e11216c1a994775c",
+    "location": "eu.hlavki.text.lemmagen.impl.LemmaRule.<init>(LemmaRule.java:47)38",
+    "spec": "StringBuilder_ThreadSafeMonitor",
+    "assumed_location_id": "12",
+    "cost": 1292130
+  },
+  {
+    "id": "fe74d0fe57cc610ebfbcf0811a3ff57c4b77751f688fe2804c95d2ca49567852",
+    "location": "eu.hlavki.text.lemmagen.TrainTest.assertLemmaEquals(TrainTest.java:101)92",
+    "spec": "Appendable_ThreadSafeMonitor",
+    "assumed_location_id": "40",
+    "cost": 72
+  },
+  {
+    "id": "fee5fb0542d2b784f480645ebd39e89a12d7d0b86a2ab93a08b37695fadb90b0",
+    "location": "eu.hlavki.text.lemmagen.impl.LemmaTreeNode.writeObject(LemmaTreeNode.java:321)318",
+    "spec": "Collection_UnsafeIteratorMonitor",
+    "assumed_location_id": "35",
+    "cost": 9872
+  }
+]

@@ -1,17 +1,18 @@
-"""Offline monitor selection, not runtime instrumentation. Requires artifact_tool and matplotlib."""
+"""Offline monitor selection, not runtime instrumentation. Requires openpyxl and matplotlib."""
 import csv, random, json, math, argparse
 from pathlib import Path
 from collections import defaultdict
 from statistics import mean, stdev
-from artifact_tool import Blob, SpreadsheetFile
 
 METHODS=['random','frequency','utility_cost','redundancy_greedy','knapsack_additive']
 BUDGETS=[10,20,30,50,80]
 
 def load(path):
-    wb=SpreadsheetFile.import_xlsx(Blob.load(str(path)))
-    sh=wb.worksheets.get_item('Monitor profile')
-    rows=sh.get_range('A1:P220').values
+    from openpyxl import load_workbook
+    wb=load_workbook(path, read_only=True, data_only=True)
+    sh=wb['Monitor profile']
+    rows=list(sh.iter_rows(min_row=1,max_col=16,values_only=True))
+    wb.close()
     names=rows[0]; out=defaultdict(list)
     for row in rows[1:]:
         if not row[0]:continue
