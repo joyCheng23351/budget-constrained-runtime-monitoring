@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "config_id": "jlemmagen__none__0__0",
+  "project": "jlemmagen",
+  "algorithm": "none",
+  "budget_pct": 0,
+  "trial": 0,
+  "seed": 42,
+  "history_sha256": "a399fdee513b9b980f42e340355ca492a53694ef06df7a8c289eab037d319650",
+  "proxy_cost": 0,
+  "proxy_total": 8572328,
+  "mapping_status": "unverified",
+  "selected_ids": [],
+  "selected_candidates": []
+}

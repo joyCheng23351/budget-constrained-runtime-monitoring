@@ -1,0 +1,281 @@
+{
+  "schema_version": 1,
+  "config_id": "javadbf__frequency__20__0",
+  "project": "javadbf",
+  "algorithm": "frequency",
+  "budget_pct": 20,
+  "trial": 0,
+  "seed": 42,
+  "history_sha256": "a399fdee513b9b980f42e340355ca492a53694ef06df7a8c289eab037d319650",
+  "proxy_cost": 142768,
+  "proxy_total": 713840,
+  "mapping_status": "unverified",
+  "selected_ids": [
+    "042f7b69e2202bbdba16472cc7ed63708976325fcc1200846cba0673ec81a68c",
+    "098599daefc8edf4529da19ecba2864f81fcf9b0313e19dba8eb1d5e03a4f631",
+    "1077ef1e05e3efab1dcbc3f0c8584a2b21858eb1ff0c7a5160ffc13626ecb38f",
+    "203917b4450ffb7070fd2f0aca4dc2a6dab4fe05590411c6c7ce7ca9159ba246",
+    "29680deb165c7c496ce89f791838aaa01ef07e3bb7bd9afb41b001583afb9fe5",
+    "2a79d0efb8e3a15712447c10adc653a0c9bcc663ca986c63ce53dd1f133fae81",
+    "2b81e798013787bd0308d2e2bcdeb65f44505348263d317f669fe1c789761cc1",
+    "3735ef202efb4f9cec21451ead17649bb2b7f4aed048f31a93018d3f0891323f",
+    "44236cf7e2adf1a447fc1ca0241d3eb81109c090ec58dbe30964bd3b862c0819",
+    "4569f22e7b9aee616c68970806c53a0d447e2037cfb070fe882af7b479651f35",
+    "4669aab9826fc826a82d396874be9a66cb9037f929d6935c193a112ff912cb59",
+    "51385a4baf1bfddf8097036d40629348858f1c1b304f020ece3e47c3c5978771",
+    "5cadcac527140465e00d1628702f5d8a3e9b759b082a609fdc00e51995e125d6",
+    "6754e5d2a23cffed6ca43870460ab208e86a964ce288f289f04d96b615f27062",
+    "7673543891dc3cc1acae66686809e1da0c66a4fc3a3f794f649207caf4abf131",
+    "8049bc82a983b6e118168da6b066fd38e3c281299c26669407749e25f62dc6a2",
+    "865c2e3376c04b394357918057699e67d0cc37c3eaf5379161cc149c93eefdfe",
+    "8daa5f4f288cc11c046964e0e59384b15a36bc81b2fb15fbdf495af45184053e",
+    "a16369ed9eec3135ebce5d15e9c0d70915822f5e4dcf4be1db5f60a24a8e221a",
+    "a433f3f8287822d3329a5e47cf95af28a7817f2edf1e595ff2faa66e0039dee1",
+    "a4691edc0bddec07cbb625cccd0c8e560992d037a4031febc059fb2d631ac772",
+    "afabe5dc944255d962f767748cc419cfee72d4ddc052956ee4801a5e6a707da8",
+    "b10589e76f452b2c61bc2431322b5ec62e55e87440985b934834cc6e600314d0",
+    "c8710a20388c06df73faf13c3fdbb81bb865a912751f09712e3074a63e144a2d",
+    "cf4e319f0cc3d4587d6ad5a822484337dee600e70ffa63766cff70fd493a5c7c",
+    "d7f6456a848323abbd401000b25e5722b2ac5e78036f96578f6116c0fc422a9c",
+    "d978eed1a6dc2529c8180d9947e29c198ce05fbddc93b9dcacb326b3ee92f806",
+    "da8fb8525dd599d36e20b7cd5a3908665f49ff6dfe293cf90fc04a8b9f1fb7bc",
+    "eb6c491a26a2ea07744526a5765fddc575c574f8d5971edde6f840c2d01bd01d",
+    "ec42848c3d3e42ffc4e86005ac2926c49fc0ac2579a9357a3216deac5a449bde",
+    "f0be647552b7b3f2a17a92707451b1c0812738398b4b0484734cb5750c39e07f",
+    "f2d96f1d46231bee3e5abcc3e901cb26429d2cdd011c0a8824962c41ff0a597e",
+    "ff11d03bceff90c454adab523b8ed7daaccb7e6a09a5d570d69dd4fc9bc5776b"
+  ],
+  "selected_candidates": [
+    {
+      "id": "042f7b69e2202bbdba16472cc7ed63708976325fcc1200846cba0673ec81a68c",
+      "location": "com.linuxense.javadbf.bug102.Bug102Test.basicReadBug102UsingNextRow(Bug102Test.java:94)57",
+      "spec": "StringBuilder_ThreadSafeMonitor",
+      "assumed_location_id": "16",
+      "cost": 1584
+    },
+    {
+      "id": "098599daefc8edf4529da19ecba2864f81fcf9b0313e19dba8eb1d5e03a4f631",
+      "location": "com.linuxense.javadbf.bug102.Bug102Test.basicReadBug102UsingNextRow(Bug102Test.java:91)57",
+      "spec": "StringBuilder_ThreadSafeMonitor",
+      "assumed_location_id": "15",
+      "cost": 54
+    },
+    {
+      "id": "1077ef1e05e3efab1dcbc3f0c8584a2b21858eb1ff0c7a5160ffc13626ecb38f",
+      "location": "com.linuxense.javadbf.DBFReader.getFieldValue(DBFReader.java:477)421",
+      "spec": "Appendable_ThreadSafeMonitor",
+      "assumed_location_id": "26",
+      "cost": 675
+    },
+    {
+      "id": "203917b4450ffb7070fd2f0aca4dc2a6dab4fe05590411c6c7ce7ca9159ba246",
+      "location": "com.linuxense.javadbf.DBFWriter.writeToStream(DBFWriter.java:372)367",
+      "spec": "Iterator_RemoveOnceMonitor",
+      "assumed_location_id": "30",
+      "cost": 34
+    },
+    {
+      "id": "29680deb165c7c496ce89f791838aaa01ef07e3bb7bd9afb41b001583afb9fe5",
+      "location": "com.linuxense.javadbf.DBFRow.<init>(DBFRow.java:39)39",
+      "spec": "Arrays_SortBeforeBinarySearchMonitor",
+      "assumed_location_id": "14",
+      "cost": 501
+    },
+    {
+      "id": "2a79d0efb8e3a15712447c10adc653a0c9bcc663ca986c63ce53dd1f133fae81",
+      "location": "com.linuxense.javadbf.testutils.DbfToTxtTest.writeToConsole(DbfToTxtTest.java:82)61",
+      "spec": "StringBuilder_ThreadSafeMonitor",
+      "assumed_location_id": "18",
+      "cost": 1008
+    },
+    {
+      "id": "2b81e798013787bd0308d2e2bcdeb65f44505348263d317f669fe1c789761cc1",
+      "location": "com.linuxense.javadbf.DBFUtils.doubleFormating(DBFUtils.java:248)244",
+      "spec": "Appendable_ThreadSafeMonitor",
+      "assumed_location_id": "38",
+      "cost": 550
+    },
+    {
+      "id": "3735ef202efb4f9cec21451ead17649bb2b7f4aed048f31a93018d3f0891323f",
+      "location": "com.linuxense.javadbf.DBFHeader.read(DBFHeader.java:159)92",
+      "spec": "Collections_SortBeforeBinarySearchMonitor",
+      "assumed_location_id": "25",
+      "cost": 1037
+    },
+    {
+      "id": "44236cf7e2adf1a447fc1ca0241d3eb81109c090ec58dbe30964bd3b862c0819",
+      "location": "com.linuxense.javadbf.bug64_excel_dbf.Bug64ExcelDBFTest.testRead(Bug64ExcelDBFTest.java:36)23",
+      "spec": "StringBuilder_ThreadSafeMonitor",
+      "assumed_location_id": "119",
+      "cost": 480
+    },
+    {
+      "id": "4569f22e7b9aee616c68970806c53a0d447e2037cfb070fe882af7b479651f35",
+      "location": "com.linuxense.javadbf.testutils.DbfToTxtTest.writeToConsole(DbfToTxtTest.java:100)61",
+      "spec": "Appendable_ThreadSafeMonitor",
+      "assumed_location_id": "19",
+      "cost": 12
+    },
+    {
+      "id": "4669aab9826fc826a82d396874be9a66cb9037f929d6935c193a112ff912cb59",
+      "location": "com.linuxense.javadbf.bug102.Bug102Test.basicReadBug102UsingNextRow(Bug102Test.java:94)57",
+      "spec": "Appendable_ThreadSafeMonitor",
+      "assumed_location_id": "16",
+      "cost": 1188
+    },
+    {
+      "id": "51385a4baf1bfddf8097036d40629348858f1c1b304f020ece3e47c3c5978771",
+      "location": "com.linuxense.javadbf.DBFWriterRandomAccesTest.testAppendingToExistingFile(DBFWriterRandomAccesTest.java:56)37",
+      "spec": "Appendable_ThreadSafeMonitor",
+      "assumed_location_id": "158",
+      "cost": 6
+    },
+    {
+      "id": "5cadcac527140465e00d1628702f5d8a3e9b759b082a609fdc00e51995e125d6",
+      "location": "com.linuxense.javadbf.DBFUtils.close(DBFUtils.java:361)359",
+      "spec": "Closeable_MultipleCloseMonitor",
+      "assumed_location_id": "10",
+      "cost": 291
+    },
+    {
+      "id": "6754e5d2a23cffed6ca43870460ab208e86a964ce288f289f04d96b615f27062",
+      "location": "com.linuxense.javadbf.DBFWriter.addRecord(DBFWriter.java:351)285",
+      "spec": "Collections_SortBeforeBinarySearchMonitor",
+      "assumed_location_id": "27",
+      "cost": 34
+    },
+    {
+      "id": "7673543891dc3cc1acae66686809e1da0c66a4fc3a3f794f649207caf4abf131",
+      "location": "com.linuxense.javadbf.DBFMemoFile.seek(DBFMemoFile.java:73)72",
+      "spec": "InputStream_UnmarkedResetMonitor",
+      "assumed_location_id": "11",
+      "cost": 495
+    },
+    {
+      "id": "8049bc82a983b6e118168da6b066fd38e3c281299c26669407749e25f62dc6a2",
+      "location": "com.linuxense.javadbf.testutils.DbfToTxtTest.export(DbfToTxtTest.java:47)40",
+      "spec": "Appendable_ThreadSafeMonitor",
+      "assumed_location_id": "46",
+      "cost": 129920
+    },
+    {
+      "id": "865c2e3376c04b394357918057699e67d0cc37c3eaf5379161cc149c93eefdfe",
+      "location": "com.linuxense.javadbf.bug102.Bug102Test.basicReadBug102UsingNextRow(Bug102Test.java:91)57",
+      "spec": "Appendable_ThreadSafeMonitor",
+      "assumed_location_id": "15",
+      "cost": 36
+    },
+    {
+      "id": "8daa5f4f288cc11c046964e0e59384b15a36bc81b2fb15fbdf495af45184053e",
+      "location": "com.linuxense.javadbf.DBFWriter.writeToStream(DBFWriter.java:372)367",
+      "spec": "Collection_UnsafeIteratorMonitor",
+      "assumed_location_id": "30",
+      "cost": 114
+    },
+    {
+      "id": "a16369ed9eec3135ebce5d15e9c0d70915822f5e4dcf4be1db5f60a24a8e221a",
+      "location": "com.linuxense.javadbf.DBFReader.getFieldValue(DBFReader.java:477)421",
+      "spec": "StringBuilder_ThreadSafeMonitor",
+      "assumed_location_id": "26",
+      "cost": 900
+    },
+    {
+      "id": "a433f3f8287822d3329a5e47cf95af28a7817f2edf1e595ff2faa66e0039dee1",
+      "location": "com.linuxense.javadbf.testutils.DbfToTxtTest.writeToConsole(DbfToTxtTest.java:82)61",
+      "spec": "Appendable_ThreadSafeMonitor",
+      "assumed_location_id": "18",
+      "cost": 840
+    },
+    {
+      "id": "a4691edc0bddec07cbb625cccd0c8e560992d037a4031febc059fb2d631ac772",
+      "location": "com.linuxense.javadbf.bug64_excel_dbf.Bug64ExcelDBFTest.testRead(Bug64ExcelDBFTest.java:34)23",
+      "spec": "StringBuilder_ThreadSafeMonitor",
+      "assumed_location_id": "118",
+      "cost": 48
+    },
+    {
+      "id": "afabe5dc944255d962f767748cc419cfee72d4ddc052956ee4801a5e6a707da8",
+      "location": "com.linuxense.javadbf.bug56.Bug56Test.test(Bug56Test.java:36)24",
+      "spec": "Appendable_ThreadSafeMonitor",
+      "assumed_location_id": "94",
+      "cost": 104
+    },
+    {
+      "id": "b10589e76f452b2c61bc2431322b5ec62e55e87440985b934834cc6e600314d0",
+      "location": "com.linuxense.javadbf.bug64_excel_dbf.Bug64ExcelDBFTest.testRead(Bug64ExcelDBFTest.java:34)23",
+      "spec": "Appendable_ThreadSafeMonitor",
+      "assumed_location_id": "118",
+      "cost": 32
+    },
+    {
+      "id": "c8710a20388c06df73faf13c3fdbb81bb865a912751f09712e3074a63e144a2d",
+      "location": "com.linuxense.javadbf.DBFRowTest.testBasicDBFRow(DBFRowTest.java:35)21",
+      "spec": "StringBuilder_ThreadSafeMonitor",
+      "assumed_location_id": "114",
+      "cost": 156
+    },
+    {
+      "id": "cf4e319f0cc3d4587d6ad5a822484337dee600e70ffa63766cff70fd493a5c7c",
+      "location": "com.linuxense.javadbf.bug49.Bug49Test.testBug49(Bug49Test.java:35)22",
+      "spec": "Appendable_ThreadSafeMonitor",
+      "assumed_location_id": "103",
+      "cost": 48
+    },
+    {
+      "id": "d7f6456a848323abbd401000b25e5722b2ac5e78036f96578f6116c0fc422a9c",
+      "location": "com.linuxense.javadbf.DBFWriter.writeToStream(DBFWriter.java:372)367",
+      "spec": "Iterator_HasNextMonitor",
+      "assumed_location_id": "30",
+      "cost": 91
+    },
+    {
+      "id": "d978eed1a6dc2529c8180d9947e29c198ce05fbddc93b9dcacb326b3ee92f806",
+      "location": "com.linuxense.javadbf.DBFWriter.writeToStream(DBFWriter.java:367)367",
+      "spec": "ByteArrayOutputStream_FlushBeforeRetrieveMonitor",
+      "assumed_location_id": "28",
+      "cost": 36
+    },
+    {
+      "id": "da8fb8525dd599d36e20b7cd5a3908665f49ff6dfe293cf90fc04a8b9f1fb7bc",
+      "location": "com.linuxense.javadbf.DBFUtils.doubleFormating(DBFUtils.java:248)244",
+      "spec": "StringBuilder_ThreadSafeMonitor",
+      "assumed_location_id": "38",
+      "cost": 660
+    },
+    {
+      "id": "eb6c491a26a2ea07744526a5765fddc575c574f8d5971edde6f840c2d01bd01d",
+      "location": "com.linuxense.javadbf.bug64_excel_dbf.Bug64ExcelDBFTest.testRead(Bug64ExcelDBFTest.java:36)23",
+      "spec": "Appendable_ThreadSafeMonitor",
+      "assumed_location_id": "119",
+      "cost": 320
+    },
+    {
+      "id": "ec42848c3d3e42ffc4e86005ac2926c49fc0ac2579a9357a3216deac5a449bde",
+      "location": "com.linuxense.javadbf.bug49.Bug49Test.testBug49(Bug49Test.java:35)22",
+      "spec": "StringBuilder_ThreadSafeMonitor",
+      "assumed_location_id": "103",
+      "cost": 72
+    },
+    {
+      "id": "f0be647552b7b3f2a17a92707451b1c0812738398b4b0484734cb5750c39e07f",
+      "location": "com.linuxense.javadbf.DBFRowTest.testBasicDBFRow(DBFRowTest.java:35)21",
+      "spec": "Appendable_ThreadSafeMonitor",
+      "assumed_location_id": "114",
+      "cost": 104
+    },
+    {
+      "id": "f2d96f1d46231bee3e5abcc3e901cb26429d2cdd011c0a8824962c41ff0a597e",
+      "location": "com.linuxense.javadbf.bug56.Bug56Test.test(Bug56Test.java:36)24",
+      "spec": "StringBuilder_ThreadSafeMonitor",
+      "assumed_location_id": "94",
+      "cost": 117
+    },
+    {
+      "id": "ff11d03bceff90c454adab523b8ed7daaccb7e6a09a5d570d69dd4fc9bc5776b",
+      "location": "com.linuxense.javadbf.DBFHeader.read(DBFHeader.java:182)92",
+      "spec": "Collections_SortBeforeBinarySearchMonitor",
+      "assumed_location_id": "5",
+      "cost": 1221
+    }
+  ]
+}
