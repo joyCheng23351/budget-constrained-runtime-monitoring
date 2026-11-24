@@ -1,0 +1,9 @@
+{
+  "project": "javadbf",
+  "budget_pct": 20,
+  "algorithm": "redundancy_greedy",
+  "trial": 0,
+  "selected_profile_rows": 149,
+  "unique_runtime_keys": 149,
+  "policy_file": "results/runtime/policies/javadbf-b20-redundancy-greedy.tsv"
+}
