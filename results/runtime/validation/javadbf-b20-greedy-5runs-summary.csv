@@ -1,0 +1,2 @@
+project,configuration,budget_pct,algorithm,repetitions,mean_elapsed_seconds,sd_elapsed_seconds,mean_peak_container_memory_kb,sd_peak_container_memory_kb
+javadbf,javadbf-b20-greedy-5runs,,,5,35.2082,12.683315820399647,943984.8,25254.14978176854

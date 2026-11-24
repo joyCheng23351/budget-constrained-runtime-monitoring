@@ -1,0 +1,6 @@
+project,configuration,repetition,elapsed_seconds,peak_container_memory_kb
+javadbf,javadbf-b20-greedy-5runs,1,35.914,901939
+javadbf,javadbf-b20-greedy-5runs,2,56.922,940237
+javadbf,javadbf-b20-greedy-5runs,3,27.040,960717
+javadbf,javadbf-b20-greedy-5runs,4,29.349,952730
+javadbf,javadbf-b20-greedy-5runs,5,26.816,964301
